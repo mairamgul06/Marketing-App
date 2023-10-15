@@ -1,0 +1,225 @@
+.Main {
+  flex: 1 1 auto;
+  margin-top: 104px;
+}
+
+.btn,
+.button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+ .button:hover{
+  opacity: 0.7;
+}
+.btn:hover{
+  opacity: 0.7;
+}
+
+.btn {
+  width: 169px;
+  height: 52px;
+  background-color: royalblue;
+  color: rgba(255, 255, 255, 1);
+  margin-right: 20px;
+}
+
+.button {
+  width: 126px;
+  height: 52px;
+  color: rgba(18, 17, 39, 1);
+  border: 1px solid rgba(18, 17, 39, 0.12);
+  background-color: inherit;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 56px;
+  color: rgba(18, 17, 39, 1);
+  text-align: center;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(18, 17, 39, 0.72);
+  text-align: center;
+}
+.title-home, .subtitle-home{
+  text-align: start;
+}
+.title-start, .subtitle-start{
+  text-align: start;
+  margin-bottom: 15px;
+}
+.position {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.image {
+  width: 196px;
+  height: 94px;
+  position: absolute;
+  left: 50px;
+  top: 36%;
+  z-index: 2;
+}
+
+.btn-flex{
+  width: 178px;
+  height: 52px;
+  background-color: rgba(68, 75, 211, 1);
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  
+}
+.btn-flex>p{
+  color: rgba(255, 255, 255, 1);
+font-weight: 500;
+font-size: 16px;
+padding-right: 10px;
+}
+.btn-flex>img{
+  width: 20px;
+  height: 20px;
+}
+.btn-flex:hover{
+  opacity: 0.7;
+}
+.post-active{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: block;
+}
+.post{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+.icon-active{
+    border-bottom: 2px solid rgba(68, 75, 211, 1);
+}
+
+.second {
+  max-width: 440px;
+  width: 100%;
+  height: 622px;
+  z-index: 1;
+}
+
+.second-last{
+  max-width: 320px;
+}
+.third {
+  width: 109px;
+  height: 172px;
+  position: absolute;
+  right: 100px;
+  bottom: 30%;
+  z-index: 0;
+}
+.third-last{
+  right: 30px;
+}
+@media (max-width:830px){
+  .position{
+    width: 100%;
+  }
+  .title{
+    font-size: 46px;
+  }
+  .subtitle{
+    font-size: 18px;
+  }
+ 
+}
+@media (max-width:769px){
+  .title{
+    font-size: 36px;
+
+  }
+  .subtitle{
+    font-size: 16px;
+  }
+  .btn-flex{
+    width: 160px;
+    height: 50px;
+  
+    font-size: 12px;
+}
+.btn, .button{
+  font-size: 14px;
+  height: 40px;
+}
+}
+@media (max-width:480px){
+  .title{
+    font-size: 30px;
+  }
+  .subtitle{
+    font-size: 14px;
+  }
+  .btn-flex{
+    width: 150px;
+    height: 45px;
+    font-size: 12px;
+  }
+  .btn, .button{
+    font-size: 12px;
+    height: 30px;
+  }
+}
+@media (max-width:321px){
+  .title{
+    font-size: 20px;
+  }
+  .subtitle{
+    font-size: 12px;
+  }
+  .btn-flex{
+    width: 140px;
+    height: 40px;
+    
+  font-size: 12px;
+  }
+  
+}
+@media (max-width:480px){
+  .second{
+    max-width: 340px;
+  width: 100%;
+  height: 500px;
+  }
+  .second-last{
+    max-width: 280px;
+  }
+  .third {
+    width: 90px;
+    height: 150px;
+    right: 60px;
+  }
+  
+}
+@media (max-width:365px){
+  .third{
+    right: 0;
+  }
+}

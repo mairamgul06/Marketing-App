@@ -1,0 +1,15 @@
+.Home{
+    padding: 90px 0px 90px;
+    background: url('../../../../images/Img\ \(1\).png') left top /100% 100% no-repeat;
+    &Wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &First{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

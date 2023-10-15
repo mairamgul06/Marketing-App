@@ -1,0 +1,31 @@
+.Home{
+    padding: 90px 0px 90px;
+    background: linear-gradient(248.66deg, #FFF1F1 0%, #E9F8FB 100%);
+    &Wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &Flex{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    &Wrap{
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        margin-top: 40px;
+    }
+}
+@media (max-width:830px) {
+    .Home{
+        &Flex{
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+}

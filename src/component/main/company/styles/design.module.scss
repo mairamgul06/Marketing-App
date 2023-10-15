@@ -1,0 +1,144 @@
+.Design{
+    padding: 90px 0px 90px;
+    background-color: rgba(242, 243, 255, 1);
+    &Wrapper{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    &First{
+        display: flex;
+        flex-direction: column;
+        height: 182px;
+        position: relative;
+        margin-bottom: 60px;
+        &::before{
+            content: '';
+          width: 100%;
+          height: 1px;
+          background-color: rgba(18, 17, 39, 0.12);
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+    }
+    &Last{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &Title{
+        font-weight: 400;
+        font-size: 14px;
+        color: rgba(68, 75, 211, 1);
+        margin-bottom: 15px;
+    }
+    &Subtitle{
+        font-weight: 700;
+        font-size: 40px;
+        color: rgba(18, 17, 39, 1);
+        margin-bottom: 10px;
+    }
+    &Letter{
+        font-weight: 400;
+        font-size: 16px;
+        color: rgba(18, 17, 39, 0.56);
+    }
+    &Line{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(252, 231, 243, 1);
+        border-radius: 100px;
+        width: 72px;
+        height: 24px;
+        color: rgba(236, 72, 153, 1);
+        font-weight: 600;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    &Text{
+        font-weight: 700;
+        font-size: 20px;
+        color: rgba(18, 17, 39, 1);
+        
+    }
+    &Price{
+        font-weight: 400;
+        font-size: 16px;
+        color: rgba(18, 17, 39, 0.56);
+        margin-top: 20px;
+    }
+    &Flex{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+    &Wrap{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+
+    }
+    &Icon{
+        width: 48px;
+        height: 48px;
+    }
+    &Write{
+        font-weight: 600;
+        font-size: 14px;
+        color: rgba(18, 17, 39, 1);
+    }
+    &Page{
+        font-weight: 400;
+        font-size: 12px;
+        color: rgba(18, 17, 39, 0.56);
+    }
+    &Blog{
+        display: flex;
+        flex-direction: column;
+        margin-right: 25px;
+    }
+}
+@media (max-width:743px) {
+    .Design{
+        &Last{
+            align-items: center;
+            justify-content: center;
+        }
+        &Blog{
+            margin-top: 30px;
+        }
+        &Subtitle{
+            font-size: 36px;
+        }
+        &Letter{
+            font-size: 13px;
+        }
+        &First{
+            &::before{
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width:500px){
+    .Design{
+        &Subtitle{
+            font-size: 30px;
+        }
+        &Letter{
+            font-size: 12px;
+        }
+    }
+}
+@media (max-width:321px){
+    .Design{
+        &Subtitle{
+            font-size: 20px;
+        }
+        &Letter{
+            font-size: 10px;
+        }
+    }
+}

@@ -1,0 +1,102 @@
+.Ready {
+    padding: 90px 0px 90px;
+    position: relative;
+
+    &Wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &First {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &Last {
+        max-width: 800px;
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        right: 0;
+        
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &Title {
+        font-weight: 700;
+        font-size: 40px;
+        color: rgba(18, 17, 39, 1);
+        margin-bottom: 20px;
+    }
+
+    &Subtitle {
+        font-weight: 400;
+        font-size: 18px;
+        color: rgba(18, 17, 39, 0.56);
+        margin-bottom: 15px;
+    }
+}
+@media (max-width:1240px) {
+    .Ready{
+        &Wrapper{
+            justify-content: start;
+            align-items: start;
+            height: 800px;
+        }
+        &First{
+           justify-content: center;
+           width: 100%;
+           align-items: center;
+
+        }
+        &First{
+            margin-bottom: 40px;
+        }
+        &Last{
+            bottom: 0;
+        }
+    }
+}
+@media (max-width:700px){
+    
+    .Ready{
+        &Last{
+            height: 450px;
+        }
+        &Title{
+            font-size: 35px;
+        }
+        &Subtitle{
+            font-size: 16px;
+        }
+    }
+}
+@media (max-width:480px){
+    
+    .Ready{
+        &Last{
+            height: 380px;
+        }
+        &Title{
+            font-size: 30px;
+        }
+        &Subtitle{
+            font-size: 14px;
+        }
+    }
+}
+@media (max-width:321px){
+    .Ready{
+        &Title{
+            font-size: 20px;
+        }
+        &Subtitle{
+            font-size: 12px;
+        }
+    }
+}

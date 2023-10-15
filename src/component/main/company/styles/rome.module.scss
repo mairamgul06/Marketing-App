@@ -1,0 +1,41 @@
+.Rome{
+    padding: 90px 0px 90px;
+    &Wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &Title{
+        font-weight: 400;
+        font-size: 20px;
+        color: rgba(18, 17, 39, 1);
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    &Image{
+        width: 128px;
+        height: 32px;
+        margin-bottom: 30px;
+    }
+    &Flex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &Img{
+        width: 56px;
+        height: 56px;
+    }
+    &Text, &Letter{
+        font-weight: 400;
+        font-size: 14px;
+    }
+    &Text{
+        color: rgba(18, 17, 39, 0.48);
+        margin-left: 5px;
+    }
+    &Letter{
+        color: rgba(18, 17, 39, 1);
+        margin-left: 20px;
+    }
+}

@@ -1,0 +1,67 @@
+.Grow{
+    padding: 90px 0px 90px;
+    &Wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &First{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    &Title{
+        font-weight: 700;
+        font-size: 40px;
+        color: rgba(18, 17, 39, 1);
+        margin-bottom: 30px;
+    }
+    &Subtitle{
+        font-weight: 400;
+        font-size: 20px;
+        color: rgba(18, 17, 39, 0.56);
+        margin-bottom: 20px;
+    }
+    
+   
+}
+@media (max-width:830px){
+    .Grow{
+        &Wrapper{
+            flex-direction: column;
+            justify-content: center;
+            padding: 10px;
+        }
+        &First{
+            width: 100%;
+            align-items: center;
+        }
+        &Title{
+            font-size: 30px;
+        }
+        &Subtitle{
+            font-size: 15px;
+        }
+    }
+
+}
+@media (max-width:500px) {
+    .Grow{
+        &Title{
+            font-size: 24px;
+        }
+        &Subtitle{
+            font-size: 12px;
+        }
+    }
+}
+@media (max-width:321px) {
+    .Grow{
+        &Title{
+            font-size: 18px;
+        }
+        &Subtitle{
+            font-size: 10px;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+.Tabs{
+    padding: 90px 0px 90px;
+    &Wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    &Wrap{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 60px;
+        height: fit-content;
+        border-bottom: 1px solid rgba(18, 17, 39, 0.12);
+        img{
+            cursor: pointer;
+        }
+    }
+    &Direct{
+        display: flex;
+        flex-direction: column;
+    }
+    &Flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &Letter{
+        font-weight: 400;
+        font-size: 20px;
+        color: rgba(18, 17, 39, 1);
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    &Icon{
+        width: 64px;
+        height: 64px;
+        margin-bottom: 10px;
+    }
+    &Subtitle, &Text{
+       font-weight: 600;
+       font-size: 14px;
+       margin-bottom: 10px;
+    }
+    &Subtitle{
+        color: rgba(18, 17, 39, 1);
+    }
+    &Text{
+        color: rgba(68, 75, 211, 1);
+    }
+}
+@media (max-width: 800px) {
+    .Tabs{
+        &Wrap{
+            
+            &::before{
+                display: none;
+            }
+            img{
+                margin: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 441px){
+    .Tabs{
+        &Wrap{
+            justify-content: center;
+        }
+    }
+}

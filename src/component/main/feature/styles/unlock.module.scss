@@ -1,0 +1,83 @@
+.Unlock{
+    padding: 90px 10px 90px;
+    &Wrapper{
+        border-radius: 20px;
+        background-color: rgba(54, 56, 188, 1);
+        display: flex;
+        flex-direction: column;
+        padding: 80px;
+    }
+    &Title{
+        font-weight: 700;
+        font-size: 40px;
+        color: rgba(255, 255, 255, 1);
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    &Flex{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &Block{
+        display: flex;
+        flex-direction: column;
+    }
+    &Letter{
+        font-weight: 700;
+        font-size: 44px;
+        color: rgba(255, 255, 255, 1);
+        margin-bottom: 15px;
+        position: relative;
+        &:before{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 48px;
+            height: 4px;
+            background-color: rgba(249, 168, 212, 1);
+        }
+    }
+    &Link{
+        font-weight: 400;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.56);
+    }
+    
+}
+@media (max-width:584px){
+    .Unlock{
+        &Wrapper{
+            align-items: center;
+            justify-content: center;
+        }
+        &Title{
+            font-size: 30px;
+        }
+        &Letter{
+            font-size: 34px;
+        }
+        &Link{
+            font-size: 14px;
+        }
+    }
+}
+@media (max-width:321px){
+    .Unlock{
+        &Title{
+            font-size: 20px;
+        }
+    }
+}
+@media (max-width:900px) {
+    .Unlock{
+        &Flex{
+            padding: 40px;
+        }
+        &Block{
+            margin-top: 20px;
+        }
+
+    }
+}

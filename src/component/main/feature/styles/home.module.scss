@@ -1,0 +1,29 @@
+.Home{
+    padding: 90px 0px 90px;
+    background-color: rgba(255, 244, 230, 1);
+    &Wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+   
+    &Btn{
+       width: 200px;
+       height: 52px;
+       border-radius: 8px;
+       border: none;
+       outline: none;
+       background-color: rgba(68, 75, 211, 1);
+       cursor: pointer;
+       font-weight: 500;
+       font-size: 16px;
+       color: rgba(255, 255, 255, 1);
+       margin-top: 30px;
+    }
+    &Link{
+       font-weight: 400;
+       font-size: 16px;
+       color: rgba(68, 75, 211, 1);
+    }
+}

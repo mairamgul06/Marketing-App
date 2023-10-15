@@ -1,0 +1,90 @@
+.Global{
+    padding: 90px 0px 90px;
+    &Wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    &First{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 60px;
+        padding: 10px;
+    }
+    &Title{
+        font-weight: 600;
+        font-size: 14px;
+        color: rgba(68, 75, 211, 1);
+        margin-bottom: 15px;
+    }
+    &Subtitle{
+        font-weight: 700;
+        font-size: 40px;
+        color: rgba(18, 17, 39, 1);
+        margin-bottom: 10px;
+    }
+    &Link{
+        font-weight: 400;
+        font-size: 18px;
+        color: rgba(18, 17, 39, 0.72);
+    }
+    &Last{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    &Letter{
+        font-weight: 700;
+        font-size: 24px;
+        color: rgba(68, 75, 211, 1);
+        margin-bottom: 10px;
+    }
+    &Page{
+        font-weight: 400;
+        font-size: 14px;
+        color: rgba(18, 17, 39, 0.56);
+    }
+    &Block{
+        max-width: 264px;
+        width: 100%;
+        height: 160px;
+        padding: 32px 24px 32px 24px;
+        border-radius: 12px;
+        border: 1px solid rgba(18, 17, 39, 0.12);
+        margin-top: 30px;
+    }
+}
+@media (max-width: 792px) {
+    .Global{
+        &Block{
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+        &Last{
+            justify-content: center;
+        }
+        &Title{
+            font-size: 12px;
+        }
+        &Subtitle{
+            font-size: 30px;
+        }
+        &Link{
+            font-size: 14px;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .Global{
+        &Title{
+            font-size: 12px;
+        }
+        &Subtitle{
+            font-size: 20px;
+        }
+        &Link{
+            font-size: 12px;
+        }
+    }
+}

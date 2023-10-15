@@ -1,0 +1,81 @@
+.Ready{
+    padding: 90px 0px 90px;
+    &Wrapper{
+       display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap;
+    }
+    &First{
+        display: flex;
+        flex-direction: column;
+    }
+    &Last{
+        display: flex;
+        justify-content: space-between;
+    }
+    &Blog{
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    &Icon{
+        width: 48px;
+        height: 48px;
+        margin-bottom: 30px;
+    }
+    &Title{
+        font-weight: 700;
+        font-size: 32px;
+        color: rgba(18, 17, 39, 1);
+        margin-bottom: 20px;
+    }
+    &Subtitle{
+        font-weight: 400;
+        font-size: 16px;
+        color: rgba(18, 17, 39, 0.56);
+        margin-bottom: 20px;
+    }
+    &Letter{
+        font-size: 16px;
+        font-weight: 700;
+        color: rgba(18, 17, 39, 1);
+        margin-bottom: 15px;
+    }
+    &Text{
+        font-weight: 400;
+        font-size: 14px;
+        color: rgba(18, 17, 39, 0.56);
+        margin-bottom: 20px;
+    }
+    &Link{
+        color: rgba(68, 75, 211, 1);
+        font-weight: 500;
+        font-size: 14px;
+    }
+    &Wrap{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        img{
+            margin-left: 10px;
+        }
+    }
+}
+@media (max-width: 980px) {
+    .Ready{
+        &Wrapper{
+            justify-content: center;
+        }
+        &Blog{
+            margin-top: 20px;
+        }
+    }
+}
+@media (max-width: 530px){
+    .Ready{
+        &Last{
+            flex-direction: column;
+        }
+    }
+}
